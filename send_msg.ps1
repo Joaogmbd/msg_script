@@ -12,7 +12,7 @@ $alive=@()
 for ($i=0; $i -le 50){
 	ping -w LAB05-$i -n 1 | Out-Null
 	if ($? -eq $true){
-		$working += "LAB05-$i"
+		$alive += "LAB05-$i"
 	}
 } 
 foreach ($i in $working){
