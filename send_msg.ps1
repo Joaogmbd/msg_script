@@ -16,5 +16,5 @@ for ($i=0; $i -le 50){
 	}
 } 
 foreach ($i in $working){
-	msg alunodev /server:$i $msg
+	msg * /server:$i $msg
 }
